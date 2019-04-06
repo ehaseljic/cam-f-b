@@ -1,0 +1,182 @@
+body{
+	margin: 0%;
+	padding: 0%;
+}
+
+.container{
+	width: 100%;
+	height: 90vh;
+	position: relative;
+}
+
+#video{
+	display: block;
+	width: 100%;
+	height: 90vh;
+	position: absolute;
+	top: 0%;
+	object-fit: fill;
+	z-index: -1;
+
+}
+
+#canvas{
+	display: block;
+	width: 100%;
+	height: 90vh;
+	position: absolute;
+	top: 0%;
+	object-fit: fill;
+	z-index: -1;
+}
+
+#switch-camera{
+	display: none;
+	position: absolute;
+	width: 8vw;
+	height: 8vw;
+	top: 2%;
+	right: 3%;
+}
+
+#switch-camera img{
+	margin:auto;
+	width: 6vw;
+	height: 6vw;
+}
+
+#container-circle{
+	display: block;
+	height: 45vh;
+	width: 100%;
+	margin-top: 6vh;
+	margin-bottom: 5vh;
+	
+}
+
+.circle{
+	stroke: #696969;
+	stroke-width: 8;
+	fill: none;
+	stroke-dasharray: 20 5;
+
+}
+
+
+#container-button{
+	width: 100%;
+	margin-top: 5%;
+
+
+}
+
+.container-button-outside{
+	margin-right: auto;
+	margin-left: auto;
+	height:  100px;
+	width: 100px;
+	border-radius: 50%;
+	border: 1px solid #0a0a0a;
+}
+
+.container-button-inside{
+	display: block;
+	height: 76px;
+	width: 76px;
+	border-radius: 50%;
+	background-color: #C0C0C0;
+	margin: auto;
+	margin-top: 12px;
+	border: 1px solid #0a0a0a;
+	cursor: pointer;
+}
+
+.container-button-inside:focus{
+	outline: none;
+}
+
+@media only screen and (max-width : 320px ) {
+	#container-circle{
+		display: block;
+		height: 60vh;
+		width: 100%;
+		margin-top: 3vh;
+		margin-bottom: 3vh;
+		
+	}
+	#container-button{
+		margin-top: 10vh;
+	
+	}
+	.container-button-outside{
+		height:  60px;
+		width: 60px;
+
+	}
+	
+	.container-button-inside{
+		height: 40px;
+		width: 40px;
+		margin-top: 10px;
+		
+	}
+
+	
+}
+
+
+@media only screen and (min-width: 321px) and (max-width: 400px) {
+	#container-circle{
+		display: block;
+		height: 60vh;
+		width: 100%;
+		margin-top: 3vh;
+		margin-bottom: 5vh;
+		
+	}
+	#container-button{
+		margin-top: 10vh;
+	
+	}
+	.container-button-outside{
+		height:  60px;
+		width: 60px;
+
+	}
+	
+	.container-button-inside{
+		height: 40px;
+		width: 40px;
+		margin-top: 10px;
+		
+	}
+}
+
+
+@media only screen and (min-width: 401px) and (max-width: 1000px) {
+	#container-circle{
+		display: block;
+		height: 70vh;
+		width: 100%;
+		margin-top: 3vh;
+		margin-bottom: 5vh;
+		
+	}
+	#container-button{
+		margin-top: 6vh;
+	
+	}
+	.container-button-outside{
+		height:  60px;
+		width: 60px;
+
+	}
+	
+	.container-button-inside{
+		height: 40px;
+		width: 40px;
+		margin-top: 10px;
+		
+	}
+
+}
